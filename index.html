@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <h1 style="text-align: center; color: blue;">Car World</h1>
+    <br>
+   
+    <div class="row p-5" style="display: flex; justify-content: center;">
+        <div class="col-4 card p-5">
+            <form action="" >
+                <h3 style="text-align: center; color: blue;">Enter Details</h3>
+                <label for="">Car Brand</label>
+                <br>
+                <input type="text" class="form-control" placeholder="car brand" style="width: 300px;" id="brand">
+                <br>
+                <label for="">Price</label>
+                <br>
+                <input type="text" class="form-control" placeholder="Price" style="width: 300px;" id="price">
+                <br>
+                <label for="">Key</label>
+                <br>
+                <input type="text" class="form-control" placeholder="Key" style="width: 300px;" id="key">
+                <br>
+                <input type="button" style="width: 300px; color: green; border-color: green;"
+                class="form-control" value="Store Records" onclick="store()">
+            </form>
+        </div>
+        <div class="col-4 card p-5">
+            <form action="">
+                <h3 style="text-align: center; color: blue;">Enter key to Retrieve Item</h3>
+                <label for="">Key</label>
+                <br>
+                <input type="text" class="form-control" placeholder="Key" style="width: 300px;" id="keyvalue">
+                <br>
+                <input type="button" style="width: 300px; color: blue; border-color: blue;"
+                class="form-control" value="Retrieve Records" onclick="retrieve()">
+                <div id="result" ></div>
+            </form>
+        </div>
+        <div class="col-4 card p-5">
+            <form action="">
+                <h3 style="text-align: center; color: blue;">Enter key to Delete Item</h3>
+                <label for="">Key</label>
+                <br>
+                <input type="text" class="form-control" placeholder="Key" style="width: 300px;" id="del">
+                <br>
+                <input type="button" style="width: 300px;color: red; border-color: red;"
+                class="form-control" value="Remove Records" onclick="deletez()">
+            </form>
+        </div>
+    </div>
+    <input type="button" style="width: 1400px;color:black; border-color:black;"
+    class="form-control m-4" value="clear all records" onclick="clearz()">
+    <br><br>
+</body>
+<script src="./car.js"></script>
+</html>
